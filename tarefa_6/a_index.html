@@ -4,34 +4,125 @@
         <meta charset="utf-80" />
         <meta name="viewport" content="width=device-width" />
         <title> Curriculo </title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .pagina{
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            header {
+                background-color: rgb(116, 84, 204);
+                padding: 10px 0;
+                box-shadow: 0 2px rgba(rgb(176, 161, 211), rgb(170, 152, 238), rgb(162, 162, 248), alpha);
+            }
+            nav {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: right;
+            }
+            nav a {
+                color:rgb(255, 255, 255);
+                text-decoration: none;
+                padding: 14px 20px;
+                margin: 0 10px;
+                transition: background-color 0.3s, color 0.3s;
+                border-radius: 5px;
+            }
+            nav a:hover{
+                background-color:rgba(rgb(176, 161, 211), rgb(170, 152, 238), rgb(162, 162, 248), alpha)
+                color #3b4de7;
+            }
+            .container {
+                display: flex;
+                align-items:  flex-start;
+                gap: 30px;
+            }
+            .texto {
+                flex: 2;
+                text-align: left;
+                font-size: 1.2em;
+                line-height: 1.8;
+                color: #333;
+            }
+            .imagem {
+                flex: 1;
+            }
+            .imagem img {
+                width: 100%;
+                max-width: 300px;
+                border: 3px dotted #888;
+                border-radius: 5px;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                padding: 20px 0;
+                margin-top: 40px;
+                text-align: center;
+            }
+            .footer-conteudo{ 
+                max-width: 800px;
+                margin: 0 auto;
+                font-size: 1em;
+
+            }
+            footer a{
+                color: rgb(170, 172, 255);
+                text-decoration: none;
+                font-weight: bold;
+            }
+            footer a:hover{
+                text-decoration: underline;
+            }
+        </style>
     </head>
 
-    <header>
 
-        <nav style=" width: 700px; margin-left: 80px;">
-                <p style="font-family: Courier, monospace; font-size: 2vw;"> Curriculo </p>
-                <a style="color:rgb(117, 78, 206); margin-left: 390px; font-family: Courier, monospace; font-style: italic; font-size: 2.5vw; text-decoration: none; " href="/home/aluno/estrutura-html/tarefa_6/contato.html">Contato</a>
-                <a style="color:rgb(117, 78, 206); font-family: Courier, monospace; font-style: italic; font-size: 2.5vw; text-decoration: none;" href="/home/aluno/estrutura-html/tarefa_6/formacao.html">Formação</a>
-                <a style="color:rgb(117, 78, 206); font-family: Courier, monospace; font-style: italic; font-size: 2.5vw; text-decoration: none;" href="/home/aluno/estrutura-html/tarefa_6/redes.html">Redes</a>
-                
-        </nav>
+    <body>
+        <div class="pagina">
+            <header>
+                <nav style=" width: 700px; margin-left: 80px;">
+                        <a href="/home/aluno/estrutura-html/tarefa_6/contato.html">Contato</a>
+                        <a href="/home/aluno/estrutura-html/tarefa_6/formacao.html">Formação</a>
+                        <a href="/home/aluno/estrutura-html/tarefa_6/redes.html">Redes</a>
+                </nav>
+        
+            </header>
 
+            <main>
+                <div class="container">
+                    <div class="texto">
+                        <h4> Sobre Anahy Cristal Alves Dos Santos Marsolin</h4>
+                        <p> 
+                            Me chamo Anahy Cristal ALves Dos Santos Marsolin, tenho 18 anos e nasci na cidade de São Carlos - SC. Atualmente, resido com meu namorado e estou em busca de uma oportunidade de emprego que me permita crescer profissionalmente e aplicar minhas habilidades.
+                        </p>
+                        <p>
+                            Estou motivada a adquirir novos conhecimentos e colaborar de forma positiva com qualquer ambiente profissional.
+                        </p>
+                    </div>
+                    <div class="imagem">
+                        <img src="/home/aluno/estrutura-html/tarefa_6/imagens/imagem.png" alt="Anahy">
+                    </div>
+                </div>
+            </main>
 
-    </header>
-
-
-    <main>
-        <section>
-            <h4> Introdução sobre mim: </h4>
-            <p> Me chamo Anahy Cristal ALves Dos Santos Marsolin e tenho 18 anos</p>
-        </section>    
-    </main>
-
-
-    <footer>
-        <p>Autor: Anahy</p>
-        <h4> (23)4567-8976</h4>
-    </footer>
+            <footer>
+                <div class="footer-conteudo">
+                    <p &copy; 2025 Anahy Cristal. Todos os direitos reservados></p>
+                    <p>
+                        Entre em contato:
+                        <a href="">anahy@email.com</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
 
 
 </html>
