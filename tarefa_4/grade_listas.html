@@ -1,65 +1,138 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <meta charset="utf-80" />
-        <meta name="viewport" content="widli=device-widli" />
-        <title> Grade curso em tabela! </title>
-    </head>
-    <body>
-        <h1 style="background-color:rgb(179, 172, 245);"> Ciência da Computação</h1>
-        <ol>
-              <li>° Semestre:         </li>
-              <li>° Semestre:         </li>
-              <li>° Semestre:         </li>
-        </ol>
+<html lang="pt-br">
+<head> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grade do Curso - Ciência da Computação</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
 
-          <tbody>
-            <h2>Fase 1: </h2>
-            <ul>
-              <li> Matemática C</li>
-              <li>Funções para modelar variações: uma preparação para o cálculo</li>
-              <li>Cálculo I</li>
-              <li>Introdução as principais ferramentas do cálculo diferencial</li>
-              <li>Sistemas digitais</li>
-              <li>Compreensão de conceitos e do funcionamento de circuitos digitais</li>
+    h1 {
+      background-color: #b3acf5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
 
-              <h2>Fase 2: </h2>
-              <li>Introdução a Computação</li>
-              <li>Introdução ao Curso de Ciência da Computação.</li>
-              <li>Circuitos digitais</li>
-              <li> Fundamentos de Eletrônica.</li>
-              <li>Matemática discreta</li>
-              <li>Compreensão de fundamentos matemáticos</li>
+    .semestres {
+      margin: 20px 0;
+      padding: 10px;
+      list-style: none;
+    }
 
-              <h2>Fase 3:</h2>
-              <li>Introdução ao Desenvolvimento Web</li>
-              <li> Introdução à Web: histórico, estrutura e funcionamento.</li>
-              <li>Estruturas de dados</li>
-              <li> Conceitos básicos de complexidade de algoritmos.</li>
-              <li>Pesquisa e ordenação de dados</li>
-              <li>Utilização de estruturas de dados avançadas</li>
+    .semestres li {
+      background-color: #e6e6fa;
+      padding: 10px;
+      margin: 5px 0;
+      border-left: 6px solid #6a5acd;
+      border-radius: 4px;
+      font-weight: bold;
+    }
 
-              <h2>Fase 4:</h2>
-              <li>Algoritmos e Programação</li>
-              <li>Conceito e construção de algoritmos. </li>
-              <li>Probabilidade e estatística</li>
-              <li>Estudo de elementos estatísticos discretos</li>
-              <li>Programação I</li>
-              <li>Compreensão de conceitos fundamentais</li>
+    .fase {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
 
-              <h2> Fase 5:</h2>
-              <li>Produção Textual Acadêmica</li>
-              <li>Língua, linguagem e sociedade.</li>
-              <li>Produção Textual Acadêmica</li>
-              <li> Desenvolvimento da competência textual-discursiva</li>
-              <li>Álgebra linear</li>
-              <li>Estudo da resolução de equações lineares</li>
+    .fase h2 {
+      color: #6a5acd;
+      margin-top: 0;
+    }
 
-              <h2> Fase 6:</h2>
-              <li>Geometria analítica</li>
-              <li> Sistema de coordenadas cartesianas.</li>
-              <li>Cálculo II</li>
-              <li>Estudo de técnicas de integração de uma função</li>
-          </tbody>
-    </body>
+    .fase ul {
+      padding-left: 20px;
+    }
+
+    .fase li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ciência da Computação</h1>
+
+  <ol class="semestres">
+    <li>1° Semestre</li>
+  </ol>
+
+  <div class="fase">
+    <h2>Fase 1</h2>
+    <ul>
+      <li>Matemática C</li>
+      <li>Funções para modelar variações: uma preparação para o cálculo</li>
+      <li>Cálculo I</li>
+      <li>Introdução às principais ferramentas do cálculo diferencial</li>
+      <li>Sistemas Digitais</li>
+      <li>Compreensão de conceitos e do funcionamento de circuitos digitais</li>
+    </ul>
+  </div>
+
+  <div class="fase">
+    <h2>Fase 2</h2>
+    <ul>
+      <li>Introdução à Computação</li>
+      <li>Introdução ao Curso de Ciência da Computação</li>
+      <li>Circuitos Digitais</li>
+      <li>Fundamentos de Eletrônica</li>
+      <li>Matemática Discreta</li>
+      <li>Compreensão de fundamentos matemáticos</li>
+    </ul>
+  </div>
+
+  <div class="fase">
+    <h2>Fase 3</h2>
+    <ul>
+      <li>Introdução ao Desenvolvimento Web</li>
+      <li>Introdução à Web: histórico, estrutura e funcionamento</li>
+      <li>Estruturas de Dados</li>
+      <li>Conceitos básicos de complexidade de algoritmos</li>
+      <li>Pesquisa e ordenação de dados</li>
+      <li>Utilização de estruturas de dados avançadas</li>
+    </ul>
+  </div>
+
+  <div class="fase">
+    <h2>Fase 4</h2>
+    <ul>
+      <li>Algoritmos e Programação</li>
+      <li>Conceito e construção de algoritmos</li>
+      <li>Probabilidade e Estatística</li>
+      <li>Estudo de elementos estatísticos discretos</li>
+      <li>Programação I</li>
+      <li>Compreensão de conceitos fundamentais</li>
+    </ul>
+  </div>
+
+  <div class="fase">
+    <h2>Fase 5</h2>
+    <ul>
+      <li>Produção Textual Acadêmica</li>
+      <li>Língua, linguagem e sociedade</li>
+      <li>Desenvolvimento da competência textual-discursiva</li>
+      <li>Álgebra Linear</li>
+      <li>Estudo da resolução de equações lineares</li>
+    </ul>
+  </div>
+
+  <div class="fase">
+    <h2>Fase 6</h2>
+    <ul>
+      <li>Geometria Analítica</li>
+      <li>Sistema de coordenadas cartesianas</li>
+      <li>Cálculo II</li>
+      <li>Estudo de técnicas de integração de uma função</li>
+    </ul>
+  </div>
+
+</body>
 </html>

@@ -1,72 +1,130 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <meta charset="utf-80" />
-        <meta name="viewport" content="width=device-width" />
-        <title> Grade curso em tabela! </title>
-    </head>
-    <body>
-        <h1 style="background-color:rgb(179, 172, 245);"> Ciência da Computação</h1>
-        <table><thead>
-            <tr>
-              <th> 1° Semestre:         </th>
-              <th> Ementa:           </th>
-              <th> 2° Semestre:         </th>
-              <th> Ementa            </th>
-              <th> 3° Semestre:         </th>
-              <th> Ementa:           </th>
-            </tr></thead>
+<html lang="pt-br">
+<head> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grade do Curso - Tabela</title>
 
-          <tbody>
-            <tr>
-              <td> Matemática C</td>
-              <td>Funções para modelar variações: uma preparação para o cálculo</td>
-              <td>Cálculo I</td>
-              <td>Introdução as principais ferramentas do cálculo diferencial</td>
-              <td>Sistemas digitais</td>
-              <td>Compreensão de conceitos e do funcionamento de circuitos digitais</td>
-            </tr>
-            <tr>
-              <td>Introdução a Computação</td>
-              <td>Introdução ao Curso de Ciência da Computação.</td>
-              <td>Circuitos digitais</td>
-              <td> Fundamentos de Eletrônica.</td>
-              <td>Matemática discreta</td>
-              <td>Compreensão de fundamentos matemáticos</td>
-            </tr>
-            <tr>
-              <td>Introdução ao Desenvolvimento Web</td>
-              <td> Introdução à Web: histórico, estrutura e funcionamento.</td>
-              <td>Estruturas de dados</td>
-              <td> Conceitos básicos de complexidade de algoritmos.</td>
-              <td>Pesquisa e ordenação de dados</td>
-              <td>Utilização de estruturas de dados avançadas</td>
-            </tr>
-            <tr>
-              <td>Algoritmos e Programação</td>
-              <td>Conceito e construção de algoritmos. </td>
-              <td>Probabilidade e estatística</td>
-              <td>Estudo de elementos estatísticos discretos</td>
-              <td>Programação I</td>
-              <td>Compreensão de conceitos fundamentais</td>
-            </tr>
-            <tr>
-              <td>Produção Textual Acadêmica</td>
-              <td>Língua, linguagem e sociedade.</td>
-              <td>Produção Textual Acadêmica</td>
-              <td> Desenvolvimento da competência textual-discursiva</td>
-              <td>Álgebra linear</td>
-              <td>Estudo da resolução de equações lineares</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Geometria analítica</td>
-              <td> Sistema de coordenadas cartesianas.</td>
-              <td>Cálculo II</td>
-              <td>Estudo de técnicas de integração de uma função</td>
-            </tr>
-          </tbody>
-          </table>
-    </body>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      background-color: #b3acf5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      min-width: 800px;
+    }
+
+    thead {
+      background-color: #6a5acd;
+      color: white;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    tr:hover {
+      background-color: #f1f1ff;
+    }
+
+    td:empty {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ciência da Computação</h1>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>1° Semestre</th>
+          <th>Ementa</th>
+          <th>2° Semestre</th>
+          <th>Ementa</th>
+          <th>3° Semestre</th>
+          <th>Ementa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Matemática C</td>
+          <td>Funções para modelar variações: uma preparação para o cálculo</td>
+          <td>Cálculo I</td>
+          <td>Introdução às principais ferramentas do cálculo diferencial</td>
+          <td>Sistemas Digitais</td>
+          <td>Compreensão de conceitos e do funcionamento de circuitos digitais</td>
+        </tr>
+        <tr>
+          <td>Introdução à Computação</td>
+          <td>Introdução ao Curso de Ciência da Computação</td>
+          <td>Circuitos Digitais</td>
+          <td>Fundamentos de Eletrônica</td>
+          <td>Matemática Discreta</td>
+          <td>Compreensão de fundamentos matemáticos</td>
+        </tr>
+        <tr>
+          <td>Introdução ao Desenvolvimento Web</td>
+          <td>Histórico, estrutura e funcionamento da Web</td>
+          <td>Estruturas de Dados</td>
+          <td>Conceitos básicos de complexidade de algoritmos</td>
+          <td>Pesquisa e Ordenação de Dados</td>
+          <td>Utilização de estruturas de dados avançadas</td>
+        </tr>
+        <tr>
+          <td>Algoritmos e Programação</td>
+          <td>Conceito e construção de algoritmos</td>
+          <td>Probabilidade e Estatística</td>
+          <td>Estudo de elementos estatísticos discretos</td>
+          <td>Programação I</td>
+          <td>Compreensão de conceitos fundamentais</td>
+        </tr>
+        <tr>
+          <td>Produção Textual Acadêmica</td>
+          <td>Língua, linguagem e sociedade</td>
+          <td>Produção Textual Acadêmica</td>
+          <td>Desenvolvimento da competência textual-discursiva</td>
+          <td>Álgebra Linear</td>
+          <td>Estudo da resolução de equações lineares</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Geometria Analítica</td>
+          <td>Sistema de coordenadas cartesianas</td>
+          <td>Cálculo II</td>
+          <td>Estudo de técnicas de integração de uma função</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body> 
 </html>
